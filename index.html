@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora — Grupo 02</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculadora">
+    <header>
+      <h1>Calculadora</h1>
+    </header>
+
+    <section class="tela" aria-label="Visor da calculadora">
+      <p id="expressao" class="expressao"></p>
+      <output id="visor" class="visor" aria-live="polite">0</output>
+    </section>
+
+    <div class="teclado">
+      <button type="button" class="limpar" data-acao="limpar">Limpar</button>
+      <button type="button" class="operador" data-operacao="/" aria-label="Dividir">÷</button>
+
+      <button type="button" data-numero="7">7</button>
+      <button type="button" data-numero="8">8</button>
+      <button type="button" data-numero="9">9</button>
+      <button type="button" class="operador" data-operacao="*" aria-label="Multiplicar">×</button>
+
+      <button type="button" data-numero="4">4</button>
+      <button type="button" data-numero="5">5</button>
+      <button type="button" data-numero="6">6</button>
+      <button type="button" class="operador" data-operacao="-" aria-label="Subtrair">−</button>
+
+      <button type="button" data-numero="1">1</button>
+      <button type="button" data-numero="2">2</button>
+      <button type="button" data-numero="3">3</button>
+      <button type="button" class="operador" data-operacao="+" aria-label="Somar">+</button>
+
+      <button type="button" class="zero" data-numero="0">0</button>
+      <button type="button" class="igual" data-acao="igual" aria-label="Calcular resultado">=</button>
+    </div>
+
+  </main>
+</body>
+</html>
